@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pregunta4">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Como se llama el actor del personaje principal? :"
+        app:layout_constraintBottom_toTopOf="@+id/correcto_r"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/incorrecto1_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="incorrecto_r"
+        android:text="Silvestre Soto"
+        app:layout_constraintBottom_toTopOf="@+id/incorrecto3_r"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correcto_r" />
+
+    <Button
+        android:id="@+id/incorrecto2_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="incorrecto_r"
+        android:text="Simon Simpsons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incorrecto3_r" />
+
+    <Button
+        android:id="@+id/correcto_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="correcto_r"
+        android:text="Silvester Stalone"
+        app:layout_constraintBottom_toTopOf="@+id/incorrecto1_r"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/incorrecto3_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="correcto_r"
+        android:text="Sirius Black"
+        app:layout_constraintBottom_toTopOf="@+id/incorrecto2_r"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incorrecto1_r" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="256dp"
+        android:layout_height="244dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rambo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
